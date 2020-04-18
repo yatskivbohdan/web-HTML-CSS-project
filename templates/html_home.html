@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block pageBody %}
+
+<div class="sidenav">
+  		<a href="{% url 'html_home'%}">About HTML</a>
+  		<a href="{% url 'tags'%}">Tags</a>
+  		<a href="{% url 'attributes'%}">Attributes</a>
+  		<a href="{% url 'forms'%}">Forms</a>
+        <a href="{% url 'meta'%}">Meta</a>
+
+        <a href="{% url 'html_resources'%}">Used resources</a>
+
+</div>
+
+
+
+<div class="main">
+    {% block pageContent %}
+    <h1>About HTML </h1>
+
+    <p>HTML was invented by Tim Berners-Lee, a physicist at the CERN research institute in Switzerland. He came up with the idea of an Internet-based hypertext system.</p>
+
+    <p>Hypertext means a text that contains references (links) to other texts that viewers can access immediately. He published the first version of HTML in 1991, consisting of 18 HTML tags. Since then, each new version of the HTML language came with new tags and attributes (tag modifiers) to the markup.</p>
+
+    <p>According to Mozilla Developer Network’s HTML Element Reference, currently, there are 140 HTML tags, although some of them are already obsolete (not supported by modern browsers).</p>
+
+    <p>Due to a quick rise in popularity, HTML is now considered an official web standard. The HTML specifications are maintained and developed by the World Wide Web Consortium (W3C). You can check out the latest state of the language anytime on W3C’s website.</p>
+
+    <p> The biggest upgrade of the language was the introduction of HTML5 in 2014. It added several new semantic tags to the markup, that reveal the meaning of their own content, such as &ltarticle&gt, &ltheader&gt, and &ltfooter&gt.
+    </p>
+    {% endblock %}
+</div>
+
+{% endblock %}

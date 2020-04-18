@@ -1,0 +1,84 @@
+{% extends "html_home.html" %}
+
+{% block pageContent %}
+<h1>HTML - Basic Tags</h1>
+    <p>Here are some basic HTML tags, by learning them you will understand HTML better!</p>
+    <h3>Heading Tags</h3>
+    <p> Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <strong>&lth1&gt, &lth2&gt, &lth3&gt, &lth4&gt, &lth5&gt</strong> and <strong>&lth6&gt</strong>. While displaying any heading, browser adds one line before and one line after that heading.</p>
+    <p>The following code</p>
+    <div class="code-xmp">
+        <code>
+        &lt!DOCTYPE html&gt<br>
+            &emsp;&lth1&gtThis is heading 1&lt/h1&gt<br>
+            &emsp;&lth2&gtThis is heading 2&lt/h2&gt<br>
+            &emsp;&lth3&gtThis is heading 3&lt/h3&gt<br>
+            &emsp;&lth4&gtThis is heading 4&lt/h4&gt<br>
+            &emsp;&lth5&gtThis is heading 5&lt/h5&gt<br>
+            &emsp;&lth6&gtThis is heading 6&lt/h6&gt<br>
+        </code>
+    </div>
+    <p>will produce output:</p>
+    <div class="code-xmp">
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+    </div>
+    <h3>Paragraph Tag</h3>
+    <p>The &ltp&gt tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &ltp&gt and a closing &lt/p&gt tag as shown below in the example</p>
+    <div class="code-xmp">
+        <code>
+        &lt!DOCTYPE html&gt<br>
+            &emsp;&ltp&gtHere is a first paragraph of text.&lt/p&gt<br>
+            &emsp;&ltp&gtHere is a second paragraph of text.&lt/p&gt<br>
+            &emsp;&ltp&gtHere is a third paragraph of text.&lt/p&gt<br>
+        </code>
+    </div>
+    <p>Output will be:</p>
+    <div class="code-xmp">
+        <p>Here is a first paragraph of text.</p>
+        <p>Here is a second paragraph of text.</p>
+        <p>Here is a third paragraph of text.</p>
+    </div>
+    <h3>Line Break Tag</h3>
+    <p>Whenever you use the <strong>&ltbr /&gt</strong> element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.</p>
+    <p>The<strong>&ltbr /&gt</strong> tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use <strong>&ltbr&gt</strong> it is not valid in XHTML.</p>
+    <div class="code-xmp">
+        <code>
+          &lt!DOCTYPE html&gt<br>
+        &emsp;&ltp&gtHello&ltbr /&gt<br>
+        &emsp;You delivered your assignment on time.&ltbr /&gt<br>
+        &emsp;Thanks&ltbr /&gt<br>
+        &emsp;Bohdan&lt/p&gt<br>
+        </code>
+    </div>
+    <p>This will produce the following result</p>
+     <div class="code-xmp">
+     <p>Hello<br />
+         You delivered your assignment on time.<br />
+         Thanks<br />
+         Bohdan</p>
+     </div>
+    <h3>Horizontal Lines</h3>
+    <p>Horizontal lines are used to visually break-up sections of a document. The &lthr&gt tag creates a line from the current position in the document to the right margin and breaks the line accordingly.</p>
+    <p>For example, you may want to give a line between two paragraphs as in the given example below</p>
+    <div class="code-xmp">
+        <code>
+          &lt!DOCTYPE html&gt<br>
+        &emsp;&ltp&gtThis is paragraph one and should be on top&lt/p&gt<br>
+        &emsp;&lthr /&gt<br>
+        &emsp;&ltp&gtThis is paragraph two and should be at bottom&lt/p&gt<br>
+        </code>
+    </div>
+     <p>This will produce the following result</p>
+    <div class="code-xmp">
+        <p>This is paragraph one and should be on top</p>
+        <hr />
+        <p>This is paragraph two and should be at bottom</p>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "css_home.html" %}
+{% load static %}
+
+{% block pageContent %}
+
+    <h1>CSS Box Model</h1>
+    <p>Every element that can be displayed is comprised of one or more rectangular boxes. CSS box model typically describes how these rectangular boxes are laid out on a web page. These boxes can have different properties and can interact with each other in different ways, but every box has a content area and optional surrounding padding, border, and margin.</p>
+    <p>The following diagram demonstrates how the padding, border, and margin CSS properties determines how much space an element can take on a web page.</p>
+    <img src="{% static 'media/box_model1.jpg'%}" alt="example1">
+    <h3>Width and Height of Elements</h3>
+    <p>Usually when you set the width and height of an element using the CSS width and height properties, in reality you are only setting the width and height of the content area of an element. The actual width and height of the element's box depend on several factors.</p>
+    <p>The actual space that an element's box might take is calculated like this:</p>
+    <p><strong>Total width:</strong> width + padding-left + padding-right + border-left + border-right + margin-left + margin-right</p>
+    <p><strong>Total height:</strong> height + padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom</p>
+{% endblock %}

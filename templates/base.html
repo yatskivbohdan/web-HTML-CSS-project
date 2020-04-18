@@ -1,0 +1,54 @@
+{%  load static %}
+<!DOCTYPE html>
+<html>
+
+
+<title>HTML&CSS Helper</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<body>
+
+
+<section class="root">
+	<div class="header">
+		<div>
+			<div>
+				<nav class="lang-menu">
+
+				</nav>
+			</div>
+			<div class="heading">
+                <h1><a class="heading-ref" href="{% url 'index'%}">Easy HTML and CSS guides</a></h1>
+			</div>
+			<div class="nav-logos">
+				<img class="logo-html" src="{% static 'media/html.png'%}" alt="HTML5Logo">
+				<ul>
+					<li><a class="html" href="{% url 'html_home'%}">HTML</a></li>
+					<li><a class="css" href="{% url 'css_home'%}">CSS</a></li>
+				</ul>
+	
+				<img class="logo-css" src="{% static 'media/css.png'%}" alt="CSS3Logo">
+				
+			</div>
+			
+		</div>
+	</div>
+
+</section>
+
+<section class="main-body">
+    {% block pageBody %}
+        <div class="index-img">
+            <img src="{% static 'media/home_back.jpg'%}" alt="html_css">
+        </div>
+        <div class="index-text">
+            <p>This is a a simple wiki site with basics of HTML and CSS.</p>
+            <p>Made as a web-programming course project in UCU</p>
+            <p>Bohdan Yatskiv 2020</p>
+        </div>
+    {% endblock %}
+</section>
+
+</body>
+</html>
+
+

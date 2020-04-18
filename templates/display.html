@@ -1,0 +1,23 @@
+{% extends "css_home.html" %}
+{% load static %}
+
+{% block pageContent %}
+    <h1>CSS Display</h1>
+        <h3>CSS Display Property</h3>
+            <p>The CSS specification defines the default display value for all the elements, e.g. the <code>&ltdiv&gt</code> element is rendered as block, while the <code>&ltp&gt</code> element is displayed inline.</p>
+        <h3>Changing the Default Display Value</h3>
+            <p>Overriding the default display value of an element is an important implication of the <code>display</code> property. For example, changing an inline-level element to be displayed as block-level element or changing the block-level element to be displayed as an inline-level element.</p>
+        <h3>Display Block</h3>
+            <p>The <code>block</code> value of the <code>display</code> property forces an element to behave like block-level element, like a <code>&ltdiv&gt</code> or <code>&ltp&gt</code> element. The style rules in the following example displays the <code>&ltspan&gt</code> and <code>&lta&gt</code> elements as block-level elements:</p>
+            <img src="{% static 'media/display1.png'%}" alt="example1">
+        <h3>Display Inline</h3>
+            <p>The <code>inline</code> value of the <code>display</code> property causes an element to behave as though it were an inline-level element, like a <code>&ltspan&gt</code> or an <code>&lta&gt</code> element. The style rules in the following example displays the <code>&ltp&gt</code> and <code>&ltli&gt</code> elements as inline-level elements:</p>
+            <img src="{% static 'media/display2.png'%}" alt="example2">
+        <h3>Display Inline-Block</h3>
+            <p>The <code>inline-block</code> value of the <code>display</code> property causes an element to generate a block box that will be flowed with surrounding content i.e. in the same line as adjacent content. The following style rules displays the <code>&ltdiv&gt</code> and <code>&ltspan&gt</code> elements as inline-block:</p>
+             <img src="{% static 'media/display3.png'%}" alt="example3">
+        <h3>Display None</h3>
+            <p>The value <code>none</code> simply causes an element to generate no boxes at all. Child elements do not generate any boxes either, even if their display property is set to something other than none. The document is rendered as though the element did not exist in the document tree.</p>
+            <img src="{% static 'media/display4.png'%}" alt="example3">
+
+{% endblock %}

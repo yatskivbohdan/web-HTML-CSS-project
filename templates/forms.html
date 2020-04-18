@@ -1,0 +1,52 @@
+{% extends "html_home.html" %}
+{% load static %}
+
+{% block pageContent %}
+
+<h1>HTML Forms</h1>
+    <p>HTML Forms are required to collect different kinds of user inputs, such as contact details like name, email address, phone numbers, or details like credit card information, etc.</p>
+    <p>Forms contain special elements called controls like inputbox, checkboxes, radio-buttons, submit buttons, etc. Users generally complete a form by modifying its controls e.g. entering text, selecting items, etc. and submitting this form to a web server for further processing.</p>
+    <p>The <code>&ltform&gt</code> tag is used to create an HTML form. Here's a simple example of a login form:</p>
+    <img src="{% static 'media/form1.png'%}" alt="example1">
+    <h3>Input Element</h3>
+        <p>This is the most commonly used element within HTML forms.
+            It allows you to specify various types of user input fields, depending on the <code>type</code> attribute. An input element can be of type text field, password field, checkbox, radio button, submit button, reset button, file select box, as well as several new input types introduced in HTML5.</p>
+    <h3>Text fields</h3>
+        <p>Text fields are one line areas that allow the user to input text.
+            Single-line text input controls are created using an <code>&ltinput&gt</code> element, whose <code>type</code> attribute has a value of <code>text</code>. Here's an example of a single-line text input used to take username:</p>
+        <img src="{% static 'media/form2.png'%}" alt="example2">
+        <p>Output:</p>
+        <img src="{% static 'media/form3.png'%}" alt="example3">
+    <h3>Radio Buttons</h3>
+        <p>Radio buttons are used to let the user select exactly one option from a pre-defined set of options. It is created using an <code>&ltinput&gt</code> element whose <code>type</code> attribute has a value of <code>radio</code>.
+    Here's an example of radio buttons that can be used to collect user's gender information:</p>
+        <img src="{% static 'media/form4.png'%}" alt="example4">
+        <p>Output:</p>
+        <img src="{% static 'media/form5.png'%}" alt="example5">
+    <h3>Checkboxes</h3>
+        <p>Checkboxes allows the user to select one or more option from a pre-defined set of options. It is created using an <code>&ltinput&gt</code> element whose <code>type</code> attribute has a value of <code>checkbox</code>.
+        Here's an example of checkboxes that can be used to collect information about user's hobbies:</p>
+        <img src="{% static 'media/form6.png'%}" alt="example6">
+        <p>Output:</p>
+        <img src="{% static 'media/form7.png'%}" alt="example7">
+    <h3>Textarea</h3>
+        <p>Textarea is a multiple-line text input control that allows a user to enter more than one line of text. Multi-line text input controls are created using an <code>&lttextarea&gt</code> element.</p>
+        <img src="{% static 'media/form8.png'%}" alt="example8">
+        <p>Output:</p>
+        <img src="{% static 'media/form9.png'%}" alt="example9">
+    <h3>Select boxes</h3>
+        <p>A select box is a dropdown list of options that allows user to select one or more option from a pull-down list of options. Select box is created using the <code>&ltselect&gt</code> element and <code>&ltoption&gt</code> element.
+        The <code>&ltoption&gt</code> elements within the <code>&ltselect&gt</code> element define each list item.</p>
+        <img src="{% static 'media/form10.png'%}" alt="example10">
+        <p>Output:</p>
+        <img src="{% static 'media/form11.png'%}" alt="example11">
+    <h3>Submit and Reset Buttons</h3>
+    <p>A submit button is used to send the form data to a web server. When submit button is clicked the form data is sent to the file specified in the form's <code>action</code> attribute to process the submitted data.
+
+            A reset button resets all the forms control to default values. Try out the following example by typing your name in the text field, and click on submit button to see it in action.</p>
+        <img src="{% static 'media/form12.png'%}" alt="example12">
+        <p>Output:</p>
+        <img src="{% static 'media/form13.png'%}" alt="example13">
+
+
+{% endblock %}

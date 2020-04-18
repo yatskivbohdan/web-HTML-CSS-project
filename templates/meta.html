@@ -1,0 +1,20 @@
+{% extends "html_home.html" %}
+{% load static %}
+
+{% block pageContent %}
+    <h1>Defining Metadata</h1>
+    <p>The <code>&ltmeta&gt</code> tags are typically used to provide structured metadata such as a document's keywords, description, author name, character encoding, and other metadata. Any number of meta tags can be placed inside the head section of an HTML or XHTML document.
+        Metadata will not be displayed on the web page, but will be machine parsable, and can be used by the browsers, search engines like Google or other web services.</p>
+    <p>The following section describes the use of meta tags for various purposes.</p>
+    <h3>Declaring Character Encoding in HTML</h3>
+        <p>Meta tag typically used to declare character encoding inside HTML document.</p>
+        <img src="{% static 'media/meta1.png'%}" alt="example1">
+    <h3>Defining the Author of a Document</h3>
+        <p>You can also use the meta tag to clearly define who is the author or creator of the web page.</p>
+        <p>The author can be an individual, the company as a whole or a third party.</p>
+        <img src="{% static 'media/meta2.png'%}" alt="example2">
+    <h3>Keywords and Description for Search Engines</h3>
+        <p>Some search engines use metadata especially keywords and descriptions to index web pages; however this may not necessarily be true. Keywords giving extra weight to a document's keywords and description provide a short synopsis of the page. Here's an example:</p>
+        <img src="{% static 'media/meta3.png'%}" alt="example2">
+
+{% endblock %}

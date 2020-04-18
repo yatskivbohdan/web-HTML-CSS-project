@@ -1,0 +1,21 @@
+{% extends "css_home.html" %}
+{% load static %}
+
+{% block pageContent %}
+<h1>CSS Margin</h1>
+    <h3>CSS Margin Properties</h3>
+        <p>The CSS margin properties allow you to set the margins around the sides of an element's box. The margins does not have a <code>background-color</code>, it is completely transparent.</p>
+    <h3>Setting Margins for Individual Sides</h3>
+        <p>You can easily specify the different margins for the different sides of an element such as top, right, bottom or left side using the CSS individual margin property.</p>
+        <img src="{% static 'media/margin1.png'%}" alt="example1">
+    <h3>The margin Shorthand Property</h3>
+        <p>The <code>margin</code> property is a shorthand property to avoid setting margin of each side separately: <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code> and <code>margin-left</code>.</p>
+        <im g src="{% static 'media/margin2.png'%}" alt="example2">
+    <p>This shorthand notation can take one, two, three, or four whitespace separated values.</p>
+    <ul>
+        <li>If one value is set, this is applied to all the four sides.</li>
+        <li>If two values are specified, the first value is applied to the top and bottom, and the second value is applied to the right and left side.</li>
+        <li>If three values are specified, the first value is applied to the top, second value is applied to left and right side and the last value is applied to the bottom.</li>
+        <li>If four values are specified, they are applied to the top, right, bottom and the left side respectively in the specified order.</li>
+    </ul>
+{% endblock %}

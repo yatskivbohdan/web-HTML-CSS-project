@@ -1,0 +1,35 @@
+{% extends "css_home.html" %}
+{% load static %}
+
+{% block pageContent %}
+    <h1>CSS3 Flexible Box Layouts</h1>
+        <p>Flexible box, commonly referred to as flexbox, is a new layout model introduced in CSS3 for creating the flexible user interface design with multiple rows and columns without using the percentage or fixed length values. The CSS3 flex layout model provides a simple and powerful mechanism for handling the distributing of space and alignment of content automatically through stylesheet without interfering the actual markup.</p>
+        <h3>How Flex Layout Works</h3>
+            <p>Flexbox consists of flex containers and flex items. A flex container can be created by setting the display property of an element to either <code>flex</code> (generate block-level flex container) or <code>inline-flex</code> (generate an inline flex container similar to inline-block). All child elements of flex container automatically become flex items and are laid out using the flex layout model. The float, clear, and vertical-align properties have no effect on flex items.</p>
+            <p>Flex items are positioned inside a flex container along a flex line controlled by the flex-direction property. By default, there is only one flex line per flex container which has the same orientation as the inline axis of the current writing mode or text direction. The following illustration will help you to understand the flex layout terminology.</p>
+            <img src="{% static 'media/flexbox1.png'%}" alt="example1">
+        <h3>Controlling Flow inside Flex Container</h3>
+            <p>In the standard CSS box model, the elements normally displayed in the order as they appear in the underlying HTML markup. Flex layout lets you control the direction of the flow inside a flex container in such a way that the elements can be laid out in any flow direction leftwards, rightwards, downwards, or even upwards.</p>
+            <p>The flow of the flex items in a flex container can be specified using the flex-direction property. The default value of this property is <code>row</code> which is same as the document's current writing mode or text direction e.g. left-to-right in English language.</p>
+        <h3>Aligning Flex Items within Flex Container</h3>
+            <p>There are four properties justify-content, align-content, align-items and align-self which are designed to control the alignment of flex items within flex container. The first three of them apply to flex containers whereas the last one applies to the individual flex items.</p>
+        <h3>Align Flex Items along Main Axis</h3>
+            <p>Flex items can be aligned along the main axis (i.e. in the horizontal direction) of the flex container using the <code>justify-content</code> property. It is typically used when the flex items do not use all the space available along the main axis.</p>
+        <p>The <code>justify-content</code> property accepts the following values:</p>
+            <ul>
+            <li><strong>flex-start</strong>-Default value. Flex items are placed at the start of the main axis.</li>
+            <li><strong>flex-end</strong>-Flex items are placed at the end of the main axis.</li>
+            <li><strong>center</strong>-Flex items are placed at the center of the main axis with equal amounts of free space at both ends. If the leftover free-space is negative i.e. if the items overflow, then the flex items will overflow equally in both directions.</li>
+            <li><strong>space-between</strong>-Flex items are distributed evenly along the main axis, where the first item placed at the main-start edge and the last one placed at the main-end. If items overflow or there's only one item, this value is equal to <code>flex-start</code>.</li>
+                <li><strong>space-around</strong>- Flex items are distributed evenly with half-size spaces on either end. If they overflow or there's only one item, this value is identical to <code>center</code>.</li>
+            </ul>
+        <h3>Align Flex Items along Cross Axis</h3>
+         <p>Flex items can be aligned along the cross axis (i.e. in the perpendicular direction) of the flex container using the <code>align-items</code> or <code>align-self</code> property. However, where the <code>align-items</code> is applied to the flex container, the <code>align-self</code> property is applied to the individual flex items, and overrides <code>align-items</code>. Both properties accept the following values:</p>
+     <ul>
+            <li><strong>flex-start</strong>- Flex items are placed at the start of the cross axis.</li>
+            <li><strong>flex-end</strong>- Flex items are placed at the start of the cross axis.</li>
+            <li><strong>center</strong>- Flex items are placed at the center of the cross axis with equal amounts of free space at both ends. If the leftover free-space is negative i.e. if the items overflow, then the flex items will overflow equally in both directions.</li>
+         <li><strong>baseline</strong>-The text baseline (or inline axis) of each flex item is aligned with the baseline of the flex item with the largest <code>font-size</code>.</li>
+         <li><strong>stretch</strong>- The flex item stretches to fill the current row or column unless prevented by the minimum and maximum width or height. Default value for <code>align-items</code> property.</li>
+            </ul>
+{% endblock %}

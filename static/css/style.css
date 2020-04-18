@@ -1,0 +1,195 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+
+}
+
+.index-img{
+	display: flex;
+	justify-content: center;
+}
+
+.index-text{
+	text-align: center;
+	font-size: 25px;
+}
+
+.heading-ref{
+	text-decoration: none;
+	color: white;
+}
+section.root{
+	top: 0;
+	margin: 0;
+	width: 100%;
+	position: fixed;
+}
+
+section.root > div.header {
+	height: 160px;
+	width: 100%;
+	background: tomato;
+	display: flex;
+	justify-content: center;
+}
+
+section.root > div.header > div {
+	width: 100%;
+}
+
+section.root > div.header > div:nth-child(1) {
+	height: 15px;
+	background-image: linear-gradient(to right, orangered, tomato);
+
+}
+
+section.root > div.header > div:nth-child(1) div.heading {
+	height: 65px;
+	background-image: linear-gradient(tomato, coral);
+}
+
+
+
+section.root h1{
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	text-align: center;
+}
+
+
+section.root > div.header > div:nth-child(1) div.nav-logos{
+	height: 65px;
+	background-image: linear-gradient(90deg, rgba(255,127,80,1) 10%, bisque 50%, rgba(255,127,80,1) 90%);
+}
+
+
+section.root > div.header > div:nth-child(1) div.nav-logos img.logo-html{
+	width: 65px;
+	height: 65px;
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos img.logo-css{
+	width: 58px;
+	height: 58px;
+	float: right;
+
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos ul {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos ul li{
+	height: 65px;
+	display: inline;
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos ul li a.html:hover {
+  background-image: linear-gradient(90deg, rgb(215, 140, 95, 0), coral);
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos ul li a.css:hover {
+  background-image: linear-gradient(90deg, coral, rgb(215, 140, 95, 0));
+}
+
+
+
+
+section.root > div.header > div:nth-child(1) div.nav-logos li a{
+	display: inline-block;
+	width: 35vw;
+	text-align: center;
+  	vertical-align: top;
+  	font-size: 25px;
+  	line-height: 2.7;
+  	text-decoration:none;
+  	text-decoration-color: black;
+  	color: white;
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos li a.html {
+	display: inline-block;
+	margin-left: 10%;
+}
+
+section.root > div.header > div:nth-child(1) div.nav-logos li a.css {
+	display: inline-block;
+}
+
+
+
+section.main-body {
+	margin-top: 163px;
+}
+
+section.main-body > div.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 0;
+  background-color: tomato;
+  overflow-x: hidden;
+}
+
+section.main-body > div.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+
+}
+
+section.main-body > div.sidenav a:hover {
+  color: moccasin;
+}
+
+
+section.main-body > div.main {
+  margin-left: 160px;
+  font-size: 25px;
+  padding: 10px 80px;
+
+}
+
+section.main-body > div.main > div.code-xmp{
+	background-color: #D3D3D3;
+
+}
+section.main-body > div.main > div.code-xmp > code{
+	background: none;
+}
+section.main-body > div.main > div.code-xmp > h1{
+	margin:10px;
+	font-size:1.57em;
+
+}
+section.main-body > div.main > div.code-xmp > h2{
+	margin: 10px;
+	font-size: 1.37em;
+
+}
+section.main-body > div.main > div.code-xmp > h3{
+	margin:10px;
+}
+section.main-body > div.main > div.code-xmp > h4{
+	margin:10px;
+}
+section.main-body > div.main > div.code-xmp > h5{
+	margin:10px;
+}
+section.main-body > div.main > div.code-xmp > h6{
+	margin:10px;
+}
+
+section.main-body code{
+	background-color: #E8E8E8;
+}
